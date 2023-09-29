@@ -1,0 +1,52 @@
++----------------+         +-----------------+
+|    Cliente     |         |    Produto      |
++----------------+         +-----------------+
+| - nome: String |         | - nome: String  |
+| - endereco:    |         | - preco: double |
+|    String      |         +-----------------+
++----------------+             /   |    |     \
+     |                        /    |    |      \
+     |                       /     |    |       \
+     |                      /      |    |        \
+     |                     /       |    |         \
+     |                    /        |    |          \
+     |                   /         |    |           \
+     |                  /          |    |            \
+     |                 /           |    |             \
+     |                /            |    |              \
+     |               /             |    |               \
+     |              /              |    |                \
+     |             /               |    |                 \
+     |            /                |    |                  \
+     |           /                 |    |                   \
+     |          /                  |    |                    \
+     |         /                   |    |                     \
+     |        /                    |    |                      \
+     |       /                     |    |                       \
+     |      /                      |    |                        \
+     |     /                       |    |                         \
+     |    /                        |    |                          \
+     |   /                         |    |                           \
+     |  /                          |    |                            \
+     | /                           |    |                             \
+     |/                            |    |                              \
++---------+              +--------------+        	    +-----------------+
+| Pedido  |              | MenuRestaurante |    	    |  TipoProteina   |
++---------+              +--------------+       	    +-----------------+
+| - cliente: Cliente    | - pedidos: List<Pedido> 	    | - CARNE         |
+| - numeroPedido: int   | - proximoNumeroPedido: int 	    | - PEIXE         |
+| - proteina: Produto   |                          	    | - FRANGO        |
+| - acompanhamentos:    |                         	    +-----------------+
+|    List<Produto>      |
+| - bebida: Produto     |                 |
+|                     	|                 |
+| +escolherProteina(p:  |                 |
+|   Produto): void      |                 |
+| +escolherAcompanhamento(p: |             |
+|   Produto): void     |                 |
+| +escolherBebida(p: Produto): void |     |
+| +calcularTotal(): double |                |
+| +mostrarDetalhes(): void |               |
++------------------------+                 |
+                                           |
+                                           |
